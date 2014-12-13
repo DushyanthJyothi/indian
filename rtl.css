@@ -1,0 +1,474 @@
+/*
+Theme Name: indian
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+http://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+
+/*--------------------------------------------------------------
+1.0 - Reset
+--------------------------------------------------------------*/
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+caption, th, td {
+    text-align: right;
+}
+
+/*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+2.1 Headings
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+2.2 Text elements
+--------------------------------------------------------------*/
+
+blockquote {
+    border-right: 1rem solid #EEEEEE;
+	border-left: none;
+}
+
+/*--------------------------------------------------------------
+3.0 Elements
+--------------------------------------------------------------*/
+
+ul, ol {
+    padding: 0 2.5rem 0 0;
+}
+
+dd {
+    margin-right: 1rem;
+	margin-left: auto;
+}
+
+img,
+a img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+4.0 Links
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+5.0 Forms
+--------------------------------------------------------------*/
+
+button, 
+input[type=button], 
+input[type=reset], 
+input[type=submit] {
+    padding-right: 1.12rem;
+    padding-left: 1.12rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+    padding-right: 1.12rem;
+    padding-left: 1.12rem;
+}
+
+textarea {
+    padding-right: 1.12rem;
+    padding-left: 1.12rem;
+}
+
+/*--------------------------------------------------------------
+6.0 Selection
+--------------------------------------------------------------*/
+/* Support a widely-adopted but non-standard selector for text selection styles
+ * to achieve a better experience. See http://core.trac.wordpress.org/ticket/25898.
+ */
+
+/*--------------------------------------------------------------
+7.0 Alignments
+--------------------------------------------------------------*/
+.alignright {
+    float: right;
+    margin-left: 1rem;
+	margin-right: auto;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 1rem;
+	margin-left: auto;
+}
+
+/*--------------------------------------------------------------
+8.0 Clearings
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+9.0 Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+    right: 2.4rem;
+	left: auto;
+}
+
+.screen-reader-text {
+    right: -10000rem;
+	left: auto;
+}
+
+/*--------------------------------------------------------------
+10.0 Widgets
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+11.0 Layout
+--------------------------------------------------------------*/
+
+/* Main container */
+
+/* Primary */
+
+/*--------------------------------------------------------------
+12.0 Header
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+12.1 - Titles
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+12.1.1 - Main Toggle
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+12.1.2 - Navigation Toggles
+--------------------------------------------------------------*/
+/* Toggles */
+
+.toggles .toggle:before {
+    margin-left: 0.25rem;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+12.1.3 - Navigation Panels
+--------------------------------------------------------------*/
+/* Panels */
+
+/* panel-menu-toggle-nav-related */
+.main-navigation {
+    text-align: right!important;
+}
+
+.main-navigation ul ul ul a {
+    padding-right: 6rem;
+	padding-left: 0;
+}
+
+/* panel-sidebar-toggle-nav-related */
+
+/* panel-search-toggle-nav-related */
+
+/* panel-social-links-toggle-nav-related */
+
+.social-links ul a:before {
+    margin-left: 0.25rem;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+13 - Content
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+13.1 - Entry Headers
+--------------------------------------------------------------*/
+
+/*Entry Meta */
+
+.posted-on:before {
+    right: 0;
+    left: 0;
+    background: -moz-linear-gradient(right, rgba(51,51,51,0) 0%, rgba(51,51,51,0) 10%, rgba(51,51,51,0.65) 50%, rgba(51,51,51,0) 90%, rgba(51,51,51,0) 100%);
+    background: -webkit-gradient(linear, right top, left top, color-stop(0%,rgba(51,51,51,0)), color-stop(10%,rgba(51,51,51,0)), color-stop(50%,rgba(51,51,51,0.65)), color-stop(90%,rgba(51,51,51,0)), color-stop(100%,rgba(51,51,51,0)));
+    background: -webkit-linear-gradient(right, rgba(51,51,51,0) 0%,rgba(51,51,51,0) 10%,rgba(51,51,51,0.65) 50%,rgba(51,51,51,0) 90%,rgba(51,51,51,0) 100%);
+    background: -o-linear-gradient(right, rgba(51,51,51,0) 0%,rgba(51,51,51,0) 10%,rgba(51,51,51,0.65) 50%,rgba(51,51,51,0) 90%,rgba(51,51,51,0) 100%);
+    background: -ms-linear-gradient(right, rgba(51,51,51,0) 0%,rgba(51,51,51,0) 10%,rgba(51,51,51,0.65) 50%,rgba(51,51,51,0) 90%,rgba(51,51,51,0) 100%);
+    background: linear-gradient(right, rgba(51,51,51,0) 0%,rgba(51,51,51,0) 10%,rgba(51,51,51,0.65) 50%,rgba(51,51,51,0) 90%,rgba(51,51,51,0) 100%);
+}
+
+.byline:before {
+    margin-left: 0.2rem;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+13.2 - Entry Content
+--------------------------------------------------------------*/
+
+/* Continue reading in posts link */
+
+/* Captions, Image captions */
+
+/* Make sure embeds and iframes fit their containers */
+
+/*--------------------------------------------------------------
+13.2.1 - Post Formats
+--------------------------------------------------------------*/
+/* attachments */
+
+/*--------------------------------------------------------------
+13.2.2 - Galleries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+13.2.3 - Pages
+--------------------------------------------------------------*/
+/*.page */
+
+/* page-title if Archives*/
+
+/* Page Content */
+
+/*Pagination links in posts*/
+
+.page-links span.active-link,
+.page-links a span.active-link {
+    float: right;
+    margin-right: -1px;
+	margin-left: auto;
+}
+
+/*content-none or no search results page*/
+
+.no-results .page-content .widget,
+.not-found .page-content .widget {
+    text-align: right;
+}
+
+/*--------------------------------------------------------------
+13.2.4 - Entry Footer
+--------------------------------------------------------------*/
+
+.cat-links:before,
+.tags-links:before,
+.comments-link:before,
+.edit-link:before {
+    /*margin-left: 0.2rem;
+}
+
+/*--------------------------------------------------------------
+13.3 - Paging-Post Navigation
+--------------------------------------------------------------*/
+/* Paging-Navigation */
+/* Post-Navigation */
+/*.image-navigation */
+
+.paging-navigation .nav-previous a:before,
+.post-navigation .nav-previous a:before,
+.image-navigation .nav-previous a:before {
+    right: 0;
+    margin-right: -3.3rem;
+    text-align: left;
+	left: auto;
+	margin-left: auto;
+}
+
+.paging-navigation .nav-next a:before,
+.post-navigation .nav-next a:before,
+.image-navigation .nav-next a:before {
+    left: 0;
+    margin-left: -3.3rem;
+    text-align: right;
+	right: auto;
+	margin-right: auto;
+}
+
+.paging-navigation .nav-previous a,
+.post-navigation .nav-previous a,
+.image-navigation .nav-previous a {
+    float: right;
+}
+
+.paging-navigation .nav-next a,
+.post-navigation .nav-next a,
+.image-navigation .nav-next a {
+    float: left;
+}
+
+/*--------------------------------------------------------------
+13.4 - Commnets
+--------------------------------------------------------------*/
+/* =Comments */
+
+.comment-author .avatar-wrapper {
+    margin-right: -2.8rem;
+    right: 50%;
+	left: auto;
+	margin-left: auto;
+}
+
+.reply:before {
+    margin-left: 0.2rem;
+	margin-right: auto;
+}
+
+.post-date:before {
+    margin-left: 0.2rem;
+	margin-right: auto;
+}
+
+/* Comments form */
+
+.comment-respond:after {
+    right: 0;
+	left: auto;
+}
+
+.comment-form-author label,
+.comment-form-email label,
+.comment-form-url label,
+.comment-form-comment label {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.comment-form-author label {
+    padding-left: 3.45rem;
+	padding-right: 0;
+}
+
+.comment-form-email label {
+    padding-left: 3.75rem;
+	padding-right: 0;
+}
+
+.comment-form-url label {
+    padding-left: 2.05rem;
+	padding-right: 0;
+}
+
+.comment-form-comment label {
+    padding-left: 1rem;
+	padding-right: 0;
+}
+
+.comment-form-author input,
+.comment-form-email input,
+.comment-form-url input,
+.comment-form-comment input {
+    padding-right: 10rem;
+	padding-left: 0;
+}
+
+.comment-form-author textarea,
+.comment-form-email textarea,
+.comment-form-url textarea,
+.comment-form-comment textarea {
+    padding-right: 10rem;
+	padding-left: 0;
+}
+
+/*--------------------------------------------------------------
+13.6 - Site Footer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+13.7 - Jetpack 
+--------------------------------------------------------------*/
+/* Infinite scroll  */
+/*--------------------------------------------------------------
+14.0 - Media Queries
+--------------------------------------------------------------*/
+/* Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See http://core.trac.wordpress.org/ticket/25888.
+ */
+
+@media (min-width: 480px) {
+
+/*--------------------------------------------------------------
+13.7 - Jetpack 
+--------------------------------------------------------------*/
+/* Infinite scroll  */
+/*--------------------------------------------------------------
+14.0 - Media Queries
+--------------------------------------------------------------*/
+/* Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See http://core.trac.wordpress.org/ticket/25888.
+ */
+
+}
+
+@media (min-width: 600px) {
+
+/*--------------------------------------------------------------
+13.7 - Jetpack 
+--------------------------------------------------------------*/
+/* Infinite scroll  */
+/*--------------------------------------------------------------
+14.0 - Media Queries
+--------------------------------------------------------------*/
+/* Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See http://core.trac.wordpress.org/ticket/25888.
+ */
+
+@media (min-width: 480px) {
+
+/*--------------------------------------------------------------
+13.7 - Jetpack 
+--------------------------------------------------------------*/
+/* Infinite scroll  */
+/*--------------------------------------------------------------
+14.0 - Media Queries
+--------------------------------------------------------------*/
+/* Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See http://core.trac.wordpress.org/ticket/25888.
+ */
+
+}
+
+}
+
+/*  Medium devices (desktops, 992px and up) 
+*   @media (min-width: @screen-md-min) */
+
+/* @media (min-width: 992px) and (max-width: 1200px) */
+
+*   @media (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+/*  Large devices (large desktops, 1200px and up) 
+*   @media (min-width: @screen-lg-min) */
+
+/*
+    .site */
+
+*/
+@media (min-width: 1200px) {
+
+}
+
+
+/* Made by the RTL-er.com - http://www.rtl-er.com */
