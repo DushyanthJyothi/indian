@@ -145,14 +145,14 @@ html {
 
 html { 
     font-size: 62.5%; /* convenience of sizing rems in a way that is similar to using px. */
-    line-height: 1.428571429; 
+    line-height: 1.5; 
 } 
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-size: 1.4rem;
-    line-height: 1.42857143;
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.5;
     color: #333333;
     background-color: #FFFFFF;
     -ms-word-wrap: break-word;/*Important to keep everything with in the container*/
@@ -183,7 +183,6 @@ h1, h2, h3, h4, h5, h6 {
     clear: both;
     font-family: inherit;
     font-weight: 500;
-    line-height: 1.428571429; 
     color: inherit;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -192,40 +191,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 36px; 
-    font-size: 3.6rem;      
+    font-size: 40px; 
+    font-size: 4rem;      
 }
 
 h2 {
-    font-size: 30px; 
-    font-size: 3.0rem; 
+    font-size: 36px; 
+    font-size: 3.6rem; 
  }
 
 h3 {
-    font-size: 24px; 
-    font-size: 2.4rem;
+    font-size: 32px; 
+    font-size: 3.2rem;
 }
 h4 {
-    font-size: 18px; 
-    font-size: 1.8rem;
+    font-size: 28px; 
+    font-size: 2.8rem;
 }
 
 h5 {
-    font-size: 14px; 
-    font-size: 1.4rem;
+    font-size: 24px; 
+    font-size: 2.4rem;
 }
 
 h6 {
-    font-size: 12px; 
-    font-size: 1.2rem;  
+    font-size: 20px; 
+    font-size: 2.0rem;  
 }
 
 /*--------------------------------------------------------------
 2.2 - Text elements
 --------------------------------------------------------------*/
 p {
-    font-size: 14px; 
-    font-size: 1.4rem;  
+    font-size: 18px; 
+    font-size: 1.8rem;  
     margin-bottom: 1.5rem;
 }
 
@@ -238,18 +237,12 @@ dfn, em, i {
 }
 
 cite {
-    font-size: 14px; 
-    font-size: 1.4rem;      
     font-style: normal;
 }
 
 blockquote {
-    font-size: 14px; 
-    font-size: 1.4rem;      
     padding: 0.5rem 1.5rem;
     margin: 0 0 1.0rem 0;
-    font-size: 17.5px;
-    font-size: 1.75rem;
     border-left: 1rem solid #666666;
     page-break-inside: avoid;
     box-shadow: none;
@@ -262,8 +255,6 @@ blockquote ol:last-child {
 }
 
 address {
-    font-size: 14px; 
-    font-size: 1.4rem;      
     display: block;
     padding: 1rem;
     margin: 0 0 1.0rem 0;   
@@ -278,8 +269,6 @@ address {
 }
 
 pre, code, kbd, tt, var {
-    font-size: 14px; 
-    font-size: 1.4rem;      
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
@@ -372,9 +361,7 @@ hr {
 }
 
 ul, ol {
-    font-size: 14px; 
-    font-size: 1.4rem;      
-    padding: 0 0 0 2.5rem;
+    margin: 0 0 0 2.5rem;
 }
 ul ul, ol ul, ul ol, ol ol {
      margin-bottom: 0;
@@ -401,8 +388,6 @@ ol ol ol {
 }
 
 dl {
-    font-size: 14px; 
-    font-size: 1.4rem;  
     margin: 0 0 1rem 0;
 }
 dt, dd {
@@ -445,8 +430,6 @@ figcaption {
 }
 
 table {
-    font-size: 14px; 
-    font-size: 1.4rem;      
     border-spacing: 0;
     border-collapse: collapse!important;
     background-color: transparent!important;
@@ -506,8 +489,6 @@ button,
 input,
 select,
 textarea {
-    font-size: 14px; 
-    font-size: 1.4rem;     
     font-size: 100%; /* Corrects font size not being inherited in all browsers */
     margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
     vertical-align: baseline; /* Improves appearance and consistency in all browsers */
@@ -611,9 +592,6 @@ input[type="password"],
 input[type="search"] {
     padding: 0.6rem 1.12rem;
     margin: 0;
-    font-size: 14px; 
-    font-size: 1.4rem; 
-    line-height: 1.42857143;
     color: #555555;
     background-color: #FFFFFF;
     background-image: none;
@@ -917,8 +895,6 @@ textarea::-webkit-input-placeholder {
     padding: 0.5rem;
     margin: 0 auto;
     display: block;
-    font-size: 14px;
-    font-size: 1.4rem;
     background-color: #F5F5F5;
     border-bottom: 0.1rem solid #C5C5C5;
 }
@@ -933,10 +909,9 @@ textarea::-webkit-input-placeholder {
     text-decoration: none;
 }
 .widget-title {
-    font-size: 24px; 
-    font-size: 2.4rem;
+    font-size: 28px; 
+    font-size: 2.8rem;
     margin-top: 0;    
-    margin-bottom: 1rem; 
 }
 .wp_widget_tag_cloud div,
 .widget_tag_cloud .tagcloud {
@@ -950,8 +925,6 @@ textarea::-webkit-input-placeholder {
     text-align:center;
 }
 .widget caption {
-    font-size: 14px; 
-    font-size: 1.4rem;
     font-weight: bold;
     text-align: center;
     margin-bottom: 1rem;
@@ -1300,8 +1273,6 @@ textarea::-webkit-input-placeholder {
 }
 .main-navigation a {
     color: #333333;
-    font-size: 14px;
-    font-size: 1.4rem;      
     display: block;
     text-decoration: none;
     padding: 0.75rem 1rem;
@@ -1522,9 +1493,8 @@ section.no-results {
 .entry-title,
 .archive-title,
 .page-title {
+    line-height: 1.3;
     padding: 0;
-    font-size: 30px;
-    font-size: 3rem;
 }
 
 /* Entry Format Type */
@@ -1635,8 +1605,8 @@ section.no-results {
 .entry-meta-post,
 .entry-meta-author,
 .entry-meta-links {
-    font-size: 14px;
-    font-size: 1.4rem; 
+    font-size: 16px;
+    font-size: 1.6rem; 
 }
 .entry-meta-post {
     clear: both;
@@ -1688,8 +1658,8 @@ section.no-results {
     margin: 0 auto;
     -webkit-font-smoothing: antialiased;
     font-family: "Genericons";
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: normal;
     text-decoration: none;
@@ -1722,8 +1692,8 @@ section.no-results {
     margin: 0 auto;
     -webkit-font-smoothing: antialiased;
     font-family: "Genericons";
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: normal;
     text-decoration: none;
@@ -1776,14 +1746,13 @@ section.no-results {
 .entry-content,
 .entry-summary,
 .page-content {
-    font-size: 14px;
-    font-size: 1.4rem;
     margin: 2rem 0rem;
 }
 
 .sep {
     margin: 0 0.5rem;
 }
+
 
 
 /* Captions, Image captions */
@@ -2187,8 +2156,6 @@ object {
 .entry-footer {
     position: relative;
     text-align: center;
-    font-size: 14px;
-    font-size: 1.4rem;    
  }
 
 .cat-links:before,
@@ -2199,8 +2166,8 @@ object {
     margin: 0 auto;
     -webkit-font-smoothing: antialiased;
     font-family: "Genericons";
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: normal;
     text-decoration: none;
@@ -2219,6 +2186,8 @@ object {
     padding: 0;
     display: block;
     margin: 0 auto; 
+    font-size: 16px;
+    font-size: 1.6rem;    
 }
 
 .cat-links a,
@@ -2353,8 +2322,6 @@ object {
     margin: 1rem auto;
 }
 .comments-title { 
-    font-size: 18px;
-    font-size: 1.8rem;
     padding: 0.5rem;
     margin: 0 auto;
     text-align: center;
@@ -2385,8 +2352,6 @@ object {
     margin: 0;
     padding: 0;
     position: relative;
-    font-size: 14px;
-    font-size: 1.4rem;
 }
 
 .comment-list li.comment {
@@ -2444,8 +2409,8 @@ object {
     word-wrap: break-word;
 }
 .comment-metadata {
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 16px;
+    font-size: 1.6rem;
     text-align: center;
 }
 .reply:before,
@@ -2454,8 +2419,8 @@ object {
     margin: 0 auto;
     -webkit-font-smoothing: antialiased;
     font-family: "Genericons";
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: normal;
     text-decoration: none;
@@ -2519,8 +2484,8 @@ div#respond {
     border-color: #F45145;
 }
 .comment-reply-title {
-    font-size: 24px;
-    font-size: 2.4rem;
+    font-size: 32px;
+    font-size: 3.2rem;
     padding: 0;
     display: block;
 }
@@ -2530,8 +2495,8 @@ div#respond {
     margin: 0 auto;
     -webkit-font-smoothing: antialiased;
     font-family: "Genericons";
-    font-size: 24px;
-    font-size: 2.4rem;
+    font-size: 33px;
+    font-size: 3.2rem;
     font-style: normal;
     font-weight: normal;
     text-decoration: none;
@@ -2585,13 +2550,13 @@ div#respond {
     -webkit-border-radius: 0.5rem 0 0 0.5rem;    
 }
 .comment-form-author label {
-    padding: 0.65rem 3.9rem 0.7rem 1rem;
+    padding: 0.65rem 4.4rem 0.7rem 1rem;
 }
 .comment-form-email label {
-    padding: 0.65rem 4.1rem 0.7rem 1rem;
+    padding: 0.65rem 4.8rem 0.7rem 1rem;
 }
 .comment-form-url label {
-    padding: 0.65rem 2.4rem 0.7rem 1rem;;
+    padding: 0.65rem 2.7rem 0.7rem 1rem;;
 }
 .comment-form-comment label {
     padding: 0.65rem 1.3rem 0.7rem 1rem;
@@ -2603,7 +2568,7 @@ div#respond {
 .comment-form-email input,
 .comment-form-url input,
 .comment-form-comment input {
-    padding-left: 9.5rem;
+    padding-left: 11.5rem;
     width: 100%;  
 }
 .comment-form-author textarea,
@@ -2612,12 +2577,12 @@ div#respond {
 .comment-form-comment textarea {
     clear: both;
     width: 100%;
-    padding-left: 9.5rem;
+    padding-left: 11.5rem;
 }
 .form-allowed-tags, 
 .form-allowed-tags code {
-    font-size: 13px;
-    font-size: 1.3rem;
+    font-size: 14px;
+    font-size: 1.4rem;
 }
 .comment-respond button, 
 .comment-respond input[type=button], 
@@ -2641,8 +2606,8 @@ div#respond {
     border-top: 0.1rem solid #D5D5D5;
 }
 .site-info {
-    font-size: 13px;
-    font-size: 1.3rem;
+    font-size: 14px;
+    font-size: 1.4rem;
     padding: 1rem;
     text-align: center;
 }
@@ -2687,6 +2652,53 @@ div#respond {
         float: right;
         display: inline-block;
     }  
+
+    /*
+    body {
+        font-size: 18px;
+        font-size: 1.8rem; 
+        line-height: 1.7;        
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1.2; 
+    }
+
+    h1 {
+        font-size: 46px; 
+        font-size: 4.6rem;      
+    }
+
+    h2 {
+        font-size: 40px; 
+        font-size: 4.0rem; 
+     }
+
+    h3 {
+        font-size: 34px; 
+        font-size: 3.4rem;
+    }
+    h4 {
+        font-size: 28px; 
+        font-size: 2.8rem;
+    }
+
+    h5 {
+        font-size: 24px; 
+        font-size: 2.4rem;
+    }
+
+    h6 {
+        font-size: 22px; 
+        font-size: 2.2rem;  
+    }
+    p {
+        font-size: 18px;
+        font-size: 1.8rem;        
+    }  
+     .comment-form-author input, .comment-form-email input, .comment-form-url input, .comment-form-comment input {
+        padding-left: 11.5rem;
+    }   */
 }
 
 @media (min-width: 600px){
@@ -2712,9 +2724,9 @@ div#respond {
         float: left;
         clear: none;
         margin: 0.2rem;
-        max-width: 32.55%;
-        max-width: -webkit-calc(32.9% - 0.2rem);
-        max-width: calc(32.9% - 0.2rem);
+        max-width: 49.6%;
+        max-width: -webkit-calc(49.6% - 0.2rem);
+        max-width: calc(49.6% - 0.2rem);
         -moz-box-shadow: none;
         -webkit-box-shadow: none;
         box-shadow: none;        
@@ -2725,18 +2737,20 @@ div#respond {
 
 } 
 
+@media (min-width: 768px) {
+    .panel .widget-area {
+        margin: 0.4rem;
+        max-width: 32.79%;
+        max-width: -webkit-calc(32.79% - 0.4rem);
+        max-width:         calc(32.79% - 0.4rem);
+    }
+
+}
 
 @media (min-width: 992px) {
     .site {
          width: 750px;
     }
-    .panel .widget-area {
-        margin: 0.4rem;
-        max-width: 32.24%;
-        max-width: -webkit-calc(32.79% - 0.4rem);
-        max-width:         calc(32.79% - 0.4rem);
-    }
-
 }
 @media (min-width: 1200px) {
 }
