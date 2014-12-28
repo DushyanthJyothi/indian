@@ -52,7 +52,6 @@ get_header(); ?>
 
 						endif;
 					?>
-					from taxonomy-post_format.php
 				</h1>
 			</header><!-- .archive-header -->
 

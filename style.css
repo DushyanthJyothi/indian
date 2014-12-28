@@ -67,31 +67,31 @@ small, strike, strong, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
-	border: 0;
-	font-family: inherit;
-	font-size: 100%;
-	font-style: inherit;
-	font-weight: inherit;
-	margin: 0;
-	outline: 0;
-	padding: 0;
-	vertical-align: baseline;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
 }
 html {
-	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
-	overflow-y: scroll; /* Keeps page centered in all browsers regardless of content height */
-	-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
-	-ms-text-size-adjust:     100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+    font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+    overflow-y: scroll; /* Keeps page centered in all browsers regardless of content height */
+    -webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+    -ms-text-size-adjust:     100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 }
 *,
 *:before,
 *:after { /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
-	-webkit-box-sizing: border-box; /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
-	-moz-box-sizing:    border-box; /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
-	box-sizing:         border-box;
+    -webkit-box-sizing: border-box; /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
+    -moz-box-sizing:    border-box; /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
+    box-sizing:         border-box;
 }
 body {
-	background: #FFFFFF;
+    background: #FFFFFF;
 }
 article,
 aside,
@@ -103,35 +103,35 @@ header,
 main,
 nav,
 section {
-	display: block;
+    display: block;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 table { /* tables still need 'cellspacing="0"' in the markup */
-	border-collapse: separate;
-	border-spacing: 0;
+    border-collapse: separate;
+    border-spacing: 0;
 }
 caption, th, td {
-	font-weight: normal;
-	text-align: left;
+    font-weight: normal;
+    text-align: left;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: "";
+    content: "";
 }
 blockquote, q {
-	quotes: "" "";
+    quotes: "" "";
 }
 a:focus {
-	outline: thin dotted;
+    outline: thin dotted;
 }
 a:hover,
 a:active {
-	outline: 0;
+    outline: 0;
 }
 a img {
-	border: 0;
+    border: 0;
 }
 
 /*--------------------------------------------------------------
@@ -186,8 +186,7 @@ h1, h2, h3, h4, h5, h6 {
     color: inherit;
 }
 h1, h2, h3, h4, h5, h6 {
-    margin-top: 1.0rem;
-    margin-bottom: 1.0rem;
+    margin: 1.5rem 0;
 }
 
 h1 {
@@ -226,6 +225,7 @@ p {
     font-size: 18px; 
     font-size: 1.8rem;  
     margin-bottom: 1.5rem;
+    line-height: 2;
 }
 
 b, strong {
@@ -242,7 +242,7 @@ cite {
 
 blockquote {
     padding: 0.5rem 1.5rem;
-    margin: 0 0 1.0rem 0;
+    margin: 0 0 1.5rem 0;
     border-left: 1rem solid #666666;
     page-break-inside: avoid;
     box-shadow: none;
@@ -256,8 +256,8 @@ blockquote ol:last-child {
 
 address {
     display: block;
-    padding: 1rem;
-    margin: 0 0 1.0rem 0;   
+    padding: 1.5rem;
+    margin: 0 0 1.5rem 0;   
     word-break: break-all;
     word-wrap: break-word;  
     background-color: #F5F5F5;
@@ -274,8 +274,8 @@ pre, code, kbd, tt, var {
 
 pre {
     display: block;
-    padding: 1rem;
-    margin: 0 0 1.0rem 0;   
+    padding: 1.5rem;
+    margin: 0 0 1.5rem 0;   
     word-break: break-all;
     word-wrap: break-word;  
     background-color: #F5F5F5;
@@ -288,6 +288,7 @@ pre {
 
 code {
     padding: 0.2rem 0.4rem;
+    margin-bottom: 1.5rem;   
     font-size: 90%;
     color: #C7254E;
     background-color: #F9F2F4;
@@ -299,6 +300,7 @@ code {
 
 kbd {
     padding: 0.2rem 0.4rem;
+    margin-bottom: 1.5rem;   
     font-size: 90%;
     color: #FFFFFF;
     background-color: #333333;
@@ -361,10 +363,17 @@ hr {
 }
 
 ul, ol {
-    margin: 0 0 0 2.5rem;
+    padding: 0;
+    margin: 0 0 1.5rem 2.5rem;
 }
 ul ul, ol ul, ul ol, ol ol {
-     margin-bottom: 0;
+     padding: 0;
+     margin-bottom: 1.5rem;
+}
+
+li {
+    padding: 0;
+    margin: 1.5rem 0;
 }
 
 ul {
@@ -388,16 +397,18 @@ ol ol ol {
 }
 
 dl {
-    margin: 0 0 1rem 0;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
 }
 dt, dd {
-    margin: 0 0 1rem 0;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
 }
 dt {
     font-weight: 700;
 }
 dd {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 
 img, 
@@ -407,6 +418,7 @@ a img {
     vertical-align: middle;
     padding: 0.2rem;
     margin: 0;    
+    margin-bottom: 1.5rem;
     background-color: #FFFFFF;
     border: 0.1rem solid #C5C5C5;
     -webkit-transition: all .2s ease-in-out;
@@ -435,6 +447,7 @@ table {
     background-color: transparent!important;
     border: 0.1rem solid #C5C5C5;
     width: 100%;
+    margin-bottom: 1rem;
 }
 thead {
     display: table-header-group;
@@ -705,12 +718,12 @@ textarea::-webkit-input-placeholder {
 .alignleft {
     display: inline;
     float: left;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
 }
 .alignright {
     display: inline;
     float: right;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 .aligncenter {
     clear: both;
@@ -901,9 +914,6 @@ textarea::-webkit-input-placeholder {
 .widget-area .widget:last-child {
     border-bottom: 0;
 }
-.widget-areas .widget-area:last-child {
-    margin-bottom: 0; 
-}
 
 .widget a {
     text-decoration: none;
@@ -911,8 +921,24 @@ textarea::-webkit-input-placeholder {
 .widget-title {
     font-size: 28px; 
     font-size: 2.8rem;
-    margin-top: 0;    
+    margin: 1rem auto;    
 }
+.widget ul, .widget ol {
+    margin-bottom: 0;
+}
+.widget ul ul, .widget ol ul, .widget ul ol, .widget ol ol {
+    margin-bottom: 0;
+}
+.widget li {
+    margin: 0;
+}
+.widget table {
+    margin-bottom: 0;   
+}
+.widget input[type=submit] {
+    display: none;
+}
+
 .wp_widget_tag_cloud div,
 .widget_tag_cloud .tagcloud {
     text-align: center;
@@ -943,7 +969,7 @@ textarea::-webkit-input-placeholder {
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Main container */
@@ -954,7 +980,7 @@ textarea::-webkit-input-placeholder {
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Primary */
@@ -965,7 +991,7 @@ textarea::-webkit-input-placeholder {
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .site-main {
@@ -975,7 +1001,7 @@ textarea::-webkit-input-placeholder {
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .site-footer {
@@ -985,7 +1011,7 @@ textarea::-webkit-input-placeholder {
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 /*--------------------------------------------------------------
@@ -1003,7 +1029,7 @@ textarea::-webkit-input-placeholder {
     width: 100%;   
     max-width: 8.0rem!important;
     max-height: 8.0rem;  
-    margin-bottom: 1rem; 
+    margin-bottom: 1.5rem; 
 }
 
 .site-header-image-wrapper img {
@@ -1022,12 +1048,12 @@ textarea::-webkit-input-placeholder {
     margin: 0 auto;
     width: 100%; 
     display: none;  
-    margin-bottom: 1rem; 
+    margin-bottom: 1.5rem; 
 }
 .site-title {
     font-weight: 100;
     letter-spacing: 1rem;
-    margin: 0 auto;
+    margin: 1rem auto;
     padding: 0;
     text-transform: capitalize;
     text-align: center;
@@ -1056,9 +1082,9 @@ textarea::-webkit-input-placeholder {
     float: none;
     padding: 0;
     margin: 0 auto;
+    margin-bottom: 1.5rem; 
     display: block;
     width: 100%;
-    margin-bottom: 1rem; 
 }
 .spinner {
     clear: both;
@@ -1067,11 +1093,11 @@ textarea::-webkit-input-placeholder {
     margin: 0 auto;
     display: block;
     width: 6rem;
-    height: 2.5rem;
+    height: 3rem;
     text-align: center;
     vertical-align: middle;
     cursor: pointer!important;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 .spinner .bouncer1,
 .spinner .bouncer2, 
@@ -1086,7 +1112,7 @@ textarea::-webkit-input-placeholder {
     font-size: 30px;
     font-size: 3rem;
     cursor: pointer!important;
-    margin-right: 0.3rem;
+    margin-right: 0.5rem;
     vertical-align: middle;
     background-color: #428BCA;
     border-radius: 100%;
@@ -1298,6 +1324,7 @@ textarea::-webkit-input-placeholder {
     padding-left: 6rem;
 }
 .main-navigation li {
+    margin: 0;
 }
 
 /* panel-sidebar-toggle-nav-related */
@@ -1344,7 +1371,7 @@ textarea::-webkit-input-placeholder {
     float: none;
     width: 100%;    
     padding: 0;
-    margin: 1rem 0;
+    margin: 0;
     display: block;
     text-align: center!important;
 }
@@ -1754,7 +1781,6 @@ section.no-results {
 }
 
 
-
 /* Captions, Image captions */
 .wp-caption {
     max-width: 100%;
@@ -1765,7 +1791,8 @@ section.no-results {
     text-align: center;
 }
 .wp-caption .wp-caption-text {
-    margin: 1rem auto;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 .wp-caption img[class*="wp-image-"] {
     display: block;
@@ -1800,7 +1827,7 @@ object {
     text-align: center;
 }
 .attachment img{
-    margin: 1rem auto;
+    margin: 1.5rem auto;
 }
 
 
@@ -1816,7 +1843,7 @@ object {
 }
 .format-status .entry-content p {
     margin: 0;
-    padding: 0.75rem;
+    padding: 1.5rem;
 }
 
 .format-chat .entry-content p {
@@ -1855,8 +1882,8 @@ object {
     margin: 0 auto;
     -webkit-font-smoothing: antialiased;
     font-family: "Genericons";
-    font-size: 30px;
-    font-size: 3rem;
+    font-size: 40px;
+    font-size: 4rem;
     font-style: normal;
     font-weight: normal;
     text-decoration: none;
@@ -1978,6 +2005,7 @@ object {
     display: block;
     vertical-align: middle;
     margin-left: 0.1rem;
+    margin-bottom: 1.5rem;
     float: left;    
 }
 .page-links span.active-link,
@@ -2119,26 +2147,18 @@ object {
     font-size: 12px;
     font-size: 1.2rem;
     line-height: 1.5;
-    margin: 0;
     max-height: 50%;
     opacity: 0;
     padding: 0 0.3rem 0.3rem 0.3rem;
     margin: 0;
+    margin-bottom: 1.5rem;
     position: absolute;
     bottom: 0;
     left: 0;
     text-align: left;
     width: 100%;
     background-clip: content-box;
-}
-.gallery-caption:before {
-    content: "";
-    height: 100%;
-    min-height: 49rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    overflow: auto;
 }
 .gallery-item:hover .gallery-caption {
     opacity: 1;
@@ -2322,6 +2342,8 @@ object {
     margin: 1rem auto;
 }
 .comments-title { 
+    font-size: 30px;
+    font-size: 3rem;
     padding: 0.5rem;
     margin: 0 auto;
     text-align: center;
@@ -2517,7 +2539,7 @@ div#respond {
     font-size: 100%;
 }
 .comment-notes {
-    margin: 1rem 0;
+    margin-bottom: 1.5rem;
 }
 .comment-form label {
     display: inline-block;
@@ -2589,7 +2611,7 @@ div#respond {
 .comment-respond input[type=reset], 
 .comment-respond input[type=submit] {
     display: block;
-    margin: 0 auto 1rem;
+    margin: 0 auto 1.5rem;
 }
 
 /*--------------------------------------------------------------
@@ -2608,7 +2630,7 @@ div#respond {
 .site-info {
     font-size: 14px;
     font-size: 1.4rem;
-    padding: 1rem;
+    margin: 2rem auto;
     text-align: center;
 }
 
@@ -2641,8 +2663,12 @@ div#respond {
 @media (min-width: 320px){
 }
 @media (min-width: 480px){
+    .site-header-image-wrapper {
+        margin-bottom: 0; 
+    }
     .site-header-branding-wrapper {
         display: block;
+        margin-bottom: 0; 
     } 
     .site-title {
         display: block;
@@ -2653,55 +2679,12 @@ div#respond {
         display: inline-block;
     }  
 
-    /*
-    body {
-        font-size: 18px;
-        font-size: 1.8rem; 
-        line-height: 1.7;        
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-        line-height: 1.2; 
-    }
-
-    h1 {
-        font-size: 46px; 
-        font-size: 4.6rem;      
-    }
-
-    h2 {
-        font-size: 40px; 
-        font-size: 4.0rem; 
-     }
-
-    h3 {
-        font-size: 34px; 
-        font-size: 3.4rem;
-    }
-    h4 {
-        font-size: 28px; 
-        font-size: 2.8rem;
-    }
-
-    h5 {
-        font-size: 24px; 
-        font-size: 2.4rem;
-    }
-
-    h6 {
-        font-size: 22px; 
-        font-size: 2.2rem;  
-    }
-    p {
-        font-size: 18px;
-        font-size: 1.8rem;        
-    }  
-     .comment-form-author input, .comment-form-email input, .comment-form-url input, .comment-form-comment input {
-        padding-left: 11.5rem;
-    }   */
 }
 
 @media (min-width: 600px){
+    .site-header-branding-wrapper {
+        margin-bottom: 1.5rem; 
+    }    
     .site-description {
         display: block;
     } 
@@ -2724,9 +2707,9 @@ div#respond {
         float: left;
         clear: none;
         margin: 0.2rem;
-        max-width: 49.6%;
-        max-width: -webkit-calc(49.6% - 0.2rem);
-        max-width: calc(49.6% - 0.2rem);
+        max-width: 49.5%;
+        max-width: -webkit-calc(49.5% - 0.2rem);
+        max-width: calc(49.5% - 0.2rem);
         -moz-box-shadow: none;
         -webkit-box-shadow: none;
         box-shadow: none;        
