@@ -3,9 +3,9 @@ jQuery(document).ready(function($) {
 	function navMenu() {
 
 		var headerMainToggle = $('#header-main-toggle');
-		var bouncer1 = $('.bouncer1');
-		var bouncer2 = $('.bouncer2');
-		var bouncer3 = $('.bouncer3');
+		var bouncer1 = $('.header-main-toggle-spinner-bouncer1');
+		var bouncer2 = $('.header-main-toggle-spinner-bouncer2');
+		var bouncer3 = $('.header-main-toggle-spinner-bouncer3');
 		
 
 		var menuToggle = $('#menu-toggle');

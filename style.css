@@ -1,6 +1,6 @@
 /*
 Theme Name: Indian
-Theme URI: http://dushi.co.uk/indian
+Theme URI: https://github.com/DushyanthJyothi/indian
 Author: Dushyanth Jyothi
 Author URI: http://dushi.co.uk/
 Description: A mobile first clean simple minimalistic responsive one-column theme
@@ -52,7 +52,7 @@ and Blueprint http://www.blueprintcss.org/
  14.0 - Site Footer
  15.0 - Media Queries
  16.0 - Print
- 17.0 - Others
+ 17.0 - Jetpack
  
 */
 
@@ -241,7 +241,7 @@ cite {
 }
 
 blockquote {
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 0 0.5rem 2.5rem;
     margin: 0 0 1.5rem 0;
     border-left: 1rem solid #666666;
     page-break-inside: avoid;
@@ -660,6 +660,7 @@ textarea {
     overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
     vertical-align: top; /* Improves readability and alignment in all browsers */
     height: auto;
+    width: 100%;
     padding: 0.6rem 1.12rem;
     color: #555555;
     background-color: #FFFFFF;
@@ -1086,22 +1087,22 @@ textarea::-webkit-input-placeholder {
     display: block;
     width: 100%;
 }
-.spinner {
+.header-main-toggle-spinner {
     clear: both;
     float: none;
     padding: 0;
     margin: 0 auto;
     display: block;
     width: 6rem;
-    height: 3rem;
+    height: 2.5rem;
     text-align: center;
     vertical-align: middle;
     cursor: pointer!important;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
-.spinner .bouncer1,
-.spinner .bouncer2, 
-.spinner .bouncer3 {
+.header-main-toggle-spinner-bouncer1,
+.header-main-toggle-spinner-bouncer2, 
+.header-main-toggle-spinner-bouncer3 {
     clear: both;
     float: none;
     padding: 0;
@@ -1112,32 +1113,32 @@ textarea::-webkit-input-placeholder {
     font-size: 30px;
     font-size: 3rem;
     cursor: pointer!important;
-    margin-right: 0.5rem;
+    margin-right: 0.3rem;
     vertical-align: middle;
     background-color: #428BCA;
     border-radius: 100%;
     -moz-border-radius: 100%;
     -webkit-border-radius: 100%;
 }
-.spinner:visited .bouncer1,
-.spinner:visited .bouncer2,
-.spinner:visited .bouncer3 { 
+.header-main-toggle-spinner:visited .header-main-toggle-spinner-bouncer1,
+.header-main-toggle-spinner:visited .header-main-toggle-spinner-bouncer2,
+.header-main-toggle-spinner:visited .header-main-toggle-spinner-bouncer3 { 
     background-color: #428BCA;
 }
-.spinner:hover .bouncer1,
-.spinner:focus .bouncer1,
-.spinner:active .bouncer1,
-.spinner:hover .bouncer2,
-.spinner:focus .bouncer2,
-.spinner:active .bouncer2,
-.spinner:hover .bouncer3,
-.spinner:focus .bouncer3,
-.spinner:active .bouncer3 { 
+.header-main-toggle-spinner:hover .header-main-toggle-spinner-bouncer1,
+.header-main-toggle-spinner:focus .header-main-toggle-spinner-bouncer1,
+.header-main-toggle-spinner:active .header-main-toggle-spinner-bouncer1,
+.header-main-toggle-spinner:hover .header-main-toggle-spinner-bouncer2,
+.header-main-toggle-spinner:focus .header-main-toggle-spinner-bouncer2,
+.header-main-toggle-spinner:active .header-main-toggle-spinner-bouncer2,
+.header-main-toggle-spinner:hover .header-main-toggle-spinner-bouncer3,
+.header-main-toggle-spinner:focus .header-main-toggle-spinner-bouncer3,
+.header-main-toggle-spinner:active .header-main-toggle-spinner-bouncer3 { 
     background-color: #2A6496;
 }
-.bouncer1.animation,
-.bouncer2.animation,
-.bouncer3.animation {
+.header-main-toggle-spinner-bouncer1.animation,
+.header-main-toggle-spinner-bouncer2.animation,
+.header-main-toggle-spinner-bouncer3.animation {
     -webkit-animation: bouncedelay 1.4s infinite ease-in-out; /* Safari 4+ */
     -moz-animation:    bouncedelay 1.4s infinite ease-in-out; /* Fx 5+ */
     -o-animation:      bouncedelay 1.4s infinite ease-in-out; /* Opera 12+ */
@@ -1147,12 +1148,12 @@ textarea::-webkit-input-placeholder {
     animation-fill-mode: both;
 
 }
-.bouncer1.animation {
+.header-main-toggle-spinner-bouncer1.animation {
     -webkit-animation-delay: -0.32s;
     animation-delay: -0.32s;
 }
 
-.bouncer2.animation {
+.header-main-toggle-spinner-bouncer2.animation {
     -webkit-animation-delay: -0.16s;
     animation-delay: -0.16s;
 }
@@ -1347,7 +1348,7 @@ textarea::-webkit-input-placeholder {
     float: none;
     width: 100%;    
     padding: 0;
-    margin: 1rem auto;
+    margin: 0 auto;     
     text-align: center;
 }
 .search-wrapper input[type="search"],
@@ -1371,7 +1372,7 @@ textarea::-webkit-input-placeholder {
     float: none;
     width: 100%;    
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     display: block;
     text-align: center!important;
 }
@@ -1394,6 +1395,8 @@ textarea::-webkit-input-placeholder {
 .social-links ul li {
     display: inline-block;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .social-links ul a {
     display: inline-block;
@@ -1522,6 +1525,7 @@ section.no-results {
 .page-title {
     line-height: 1.3;
     padding: 0;
+    margin-top: 0;
 }
 
 /* Entry Format Type */
@@ -1615,7 +1619,7 @@ section.no-results {
     content: "";
 }
 .format-chat .entry-format-link:before {
-    content: "\f105";
+    content: "\f108";
 }
 .attachment-jpeg .entry-format-type:before { 
     content: "\f473";
@@ -1848,7 +1852,7 @@ object {
 
 .format-chat .entry-content p {
     margin: 0;
-    padding: 0.50rem 0.75rem;
+    padding: 1.5rem;
 }
 .format-chat .entry-content p:nth-child(even) { 
     background-color: #E5E5E5;
@@ -1890,7 +1894,7 @@ object {
     vertical-align: middle;
     position: relative;
     top: -0.16rem; 
-    margin-right: 0.35rem;       
+    margin-right: 1rem;       
 }
 .archive-title,
 .page-title {
@@ -1973,6 +1977,10 @@ object {
 .archive.tag-audio .archive-title:before,
 .archive.term-post-format-audio .archive-title:before {
     content: "\f109";
+}
+.archive.tag-chats .archive-title:before,
+.archive.term-post-format-chat .archive-title:before {
+    content: "\f108";
 }
 .taxonomy-description{
     margin: 1.0rem 0;
@@ -2078,6 +2086,9 @@ object {
     overflow: hidden;
     position: relative;
 }
+.gallery-item img {
+    margin-bottom: 0;
+}
 .gallery-columns-1 .gallery-item {
     max-width: 100%;
 }
@@ -2139,26 +2150,19 @@ object {
     clear: left;
 }
 .gallery-caption {
-    background-color: rgba(0, 0, 0, 0.7);
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing:    border-box;
-    box-sizing:         border-box;
-    color: #FFFFFF;
-    font-size: 12px;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    max-height: 50%;
     opacity: 0;
-    padding: 0 0.3rem 0.3rem 0.3rem;
-    margin: 0;
-    margin-bottom: 1.5rem;
+    background: rgba( 255,255,255,0.8 );
+    color: #333;
+    font-size: 13px;
+    font-weight: 400;
+    overflow: hidden;
+    padding: 10px 0;
     position: absolute;
     bottom: 0;
-    left: 0;
-    text-align: left;
+    text-indent: 10px;
+    text-overflow: ellipsis;
     width: 100%;
-    background-clip: content-box;
-    overflow: auto;
+    white-space: nowrap;
 }
 .gallery-item:hover .gallery-caption {
     opacity: 1;
@@ -2618,14 +2622,14 @@ div#respond {
 14.0 - Site Footer
 --------------------------------------------------------------*/
 .site-footer{
-    clear: both;
-    float: none;
-    width: 100%;
-    padding: 1rem;
-    display: block;
-    margin: 0 auto;     
-    border-top: 0.1rem solid #E1E1E1;
-    border-top: 0.1rem solid #D5D5D5;
+    height: 0.1rem;  
+    background: -moz-linear-gradient(left, rgba(51,51,51,0.01) 0%, rgba(51,51,51,0.2) 10%, rgba(51,51,51,0.50) 50%, rgba(51,51,51,0.2) 90%, rgba(51,51,51,0.01) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(51,51,51,0.01)), color-stop(10%,rgba(51,51,51,0.2)), color-stop(50%,rgba(51,51,51,0.50)), color-stop(90%,rgba(51,51,51,0.2)), color-stop(100%,rgba(51,51,51,0.01))); /* Chrome,Safari4+ */
+    background:-webkit-linear-gradient(left, rgba(51,51,51,0.01) 0%,rgba(51,51,51,0.2) 10%,rgba(51,51,51,0.50) 50%,rgba(51,51,51,0.2) 90%,rgba(51,51,51,0.01) 100%);
+    background: -o-linear-gradient(left, rgba(51,51,51,0.01) 0%,rgba(51,51,51,0.2) 10%,rgba(51,51,51,0.50) 50%,rgba(51,51,51,0.2) 90%,rgba(51,51,51,0.01) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(51,51,51,0.01) 0%,rgba(51,51,51,0.2) 10%,rgba(51,51,51,0.50) 50%,rgba(51,51,51,0.2) 90%,rgba(51,51,51,0.01) 100%); /* IE10+ */
+    background: linear-gradient(left, rgba(51,51,51,0.01) 0%,rgba(51,51,51,0.2) 10%,rgba(51,51,51,0.50) 50%,rgba(51,51,51,0.2) 90%,rgba(51,51,51,0.01) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */    
 }
 .site-info {
     font-size: 14px;
@@ -2744,5 +2748,106 @@ div#respond {
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
-17.0 - Others
+17.0 - Jetpack
 --------------------------------------------------------------*/
+/* infinite-scroll */
+#infinite-handle {
+    clear: both;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#infinite-handle span{
+    clear: both;
+    float: none;
+    margin: 0 auto;
+    max-width: 100%;
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 2;
+}
+#infinite-handle span {
+    cursor: pointer;    
+    overflow: visible;
+    text-transform: none;
+    margin: 0;
+    font-weight: 400;
+    padding: 1.25rem;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    color: #333333;
+    background-color: #FFFFFF;
+    border: 0.1rem solid #C5C5C5;
+    border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+}
+#infinite-handle span:focus, 
+#infinite-handle span:active:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+#infinite-handle span:hover, 
+#infinite-handle span:focus {
+    color: #333333;
+    text-decoration: none;
+}
+#infinite-handle span:active{
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+#infinite-handle span:hover, 
+#infinite-handle span:focus, 
+#infinite-handle span:active{
+    color: #333333;
+    background-color: #F5F5F5;
+    border-color: #C5C5C5;
+}
+.spinner {
+    clear: both;
+    float: none;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+}
+#infinite-footer {
+    display: none;
+}
+
+
+/* Overall Sharedaddy block title */
+div.sharedaddy,
+#content div.sharedaddy,
+#main div.sharedaddy {
+    margin-top: 3rem;
+    text-align: center;
+}
+div.sharedaddy h3.sd-title:before {
+    border: 0!important;
+    height: 0.1rem;  
+    background: -moz-linear-gradient(left, rgba(51,51,51,0.01) 0%, rgba(51,51,51,0.2) 10%, rgba(51,51,51,0.50) 50%, rgba(51,51,51,0.2) 90%, rgba(51,51,51,0.01) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(51,51,51,0.01)), color-stop(10%,rgba(51,51,51,0.2)), color-stop(50%,rgba(51,51,51,0.50)), color-stop(90%,rgba(51,51,51,0.2)), color-stop(100%,rgba(51,51,51,0.01))); /* Chrome,Safari4+ */
+    background:-webkit-linear-gradient(left, rgba(51,51,51,0.01) 0%,rgba(51,51,51,0.2) 10%,rgba(51,51,51,0.50) 50%,rgba(51,51,51,0.2) 90%,rgba(51,51,51,0.01) 100%);
+    background: -o-linear-gradient(left, rgba(51,51,51,0.01) 0%,rgba(51,51,51,0.2) 10%,rgba(51,51,51,0.50) 50%,rgba(51,51,51,0.2) 90%,rgba(51,51,51,0.01) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(51,51,51,0.01) 0%,rgba(51,51,51,0.2) 10%,rgba(51,51,51,0.50) 50%,rgba(51,51,51,0.2) 90%,rgba(51,51,51,0.01) 100%); /* IE10+ */
+    background: linear-gradient(left, rgba(51,51,51,0.01) 0%,rgba(51,51,51,0.2) 10%,rgba(51,51,51,0.50) 50%,rgba(51,51,51,0.2) 90%,rgba(51,51,51,0.01) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */    
+}
+div.sharedaddy h3.sd-title {
+    font-weight: normal!important;
+    font-size: 16px!important;
+    font-size: 1.6rem!important;
+}
+

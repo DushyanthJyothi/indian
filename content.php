@@ -33,7 +33,7 @@ $formats = get_theme_support( 'post-formats' );
 
 	<?php if ( '' != get_the_post_thumbnail() ) : ?>
 		<figure class="entry-thumbnail">
-			<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail( 'index-thumb' ); ?></a>
+			<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail('thumbnail'); ?></a>
 		</figure>
 	<?php endif; ?>
 

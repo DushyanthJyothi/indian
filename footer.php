@@ -15,7 +15,7 @@
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'indian' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'indian' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'indian' ), 'Indian', '<a href="http://dushi.co.uk/" rel="designer">Dushyanth Jyothi</a>' ); ?>
+			<?php printf( __( 'Theme %1$s by %2$s.', 'indian' ), '<a href="https://github.com/DushyanthJyothi/indian">Indian</a>', '<a href="http://dushi.co.uk/" rel="designer">Dushyanth Jyothi</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
@@ -24,3 +24,5 @@
 
 </body>
 </html>
+
+

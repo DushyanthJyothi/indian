@@ -44,7 +44,7 @@ get_header(); ?>
 						elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) :
 							_e( 'Galleries', 'indian' );
 
-						elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) :
+						elseif ( is_tax( 'post_format', 'post-format-chat' ) ) :
 							_e( 'Chats', 'indian' );
 
 						else :

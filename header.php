@@ -35,13 +35,13 @@
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div>
 		<div class="site-header-nav-wrapper">
-			<div id="header-main-toggle" class="spinner" title="Toggle Menu Options"><div class="bouncer1 animation"></div><div class="bouncer2 animation"></div><div class="bouncer3 animation"></div></div>
+			<div id="header-main-toggle" class="header-main-toggle-spinner" title="Toggle Menu Options"><div class="header-main-toggle-spinner-bouncer1 animation"></div><div class="header-main-toggle-spinner-bouncer2 animation"></div><div class="header-main-toggle-spinner-bouncer3 animation"></div></div>
 			<div id="header-toggles" class="toggles">
 				<div id="menu-toggle" class="toggle" title="<?php esc_attr_e( 'Menu', 'indian' ); ?>"><span class="screen-reader-text"><?php _e( 'Menu', 'indian' ); ?></span></div>
 				<div id="sidebar-toggle" class="toggle" title="<?php esc_attr_e( 'Widgets', 'indian' ); ?>"><span class="screen-reader-text"><?php _e( 'Widgets', 'indian' ); ?></span></div>
 				<div id="search-toggle" class="toggle" title="<?php esc_attr_e( 'Search', 'indian' ); ?>"><span class="screen-reader-text"><?php _e( 'Search', 'indian' ); ?></span></div>
 				<?php if ( has_nav_menu( 'social' ) ) : ?>
-					<div id="social-links-toggle" class="toggle" title="<?php esc_attr_e( 'Social Links', 'sorbet' ); ?>"><span class="screen-reader-text"><?php _e( 'Social Links', 'sorbet' ); ?></span></div>
+					<div id="social-links-toggle" class="toggle" title="<?php esc_attr_e( 'Social Links', 'indian' ); ?>"><span class="screen-reader-text"><?php _e( 'Social Links', 'indian' ); ?></span></div>
 				<?php endif; ?>
 			</div><!-- #toggles  -->
 			<div id="toggle-nav-panels" class="panels">

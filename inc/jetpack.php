@@ -14,7 +14,7 @@ function indian_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
 		'container'      => 'main',
 		'footer'         => 'content',
-		'type'           => 'click',
+		'type'           => 'scroll',
 	) );
 
 }

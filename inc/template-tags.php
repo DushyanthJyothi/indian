@@ -54,8 +54,8 @@ function indian_post_nav() {
 		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'indian' ); ?></h1>
 		<div class="nav-links">
 			<?php
-				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<span class="meta-nav screen-reader-text">&larr;</span>', 'Previous post link', 'sorbet' ) );
-				next_post_link(     '<div class="nav-next">%link</div>',     _x( '<span class="meta-nav screen-reader-text">&rarr;</span>', 'Next post link',     'sorbet' ) );
+				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<span class="meta-nav screen-reader-text">&larr;</span>', 'Previous post link', 'indian' ) );
+				next_post_link(     '<div class="nav-next">%link</div>',     _x( '<span class="meta-nav screen-reader-text">&rarr;</span>', 'Next post link',     'indian' ) );
 			?>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->

@@ -33,6 +33,15 @@ function indian_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 	
+	/*
+	 * Let WordPress manage the document title.
+	 * By adding theme support, we declare that this theme does not use a
+	 * hard-coded <title> tag in the document head, and expect WordPress to
+	 * provide it for us.
+	 */
+	add_theme_support( 'title-tag' );
+
+		
 	//Style the Tiny MCE editor
 	add_editor_style();
 
@@ -41,8 +50,16 @@ function indian_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	add_theme_support( 'post-thumbnails' );
-	add_image_size( 'index-thumb', 150, 150 );
+	add_theme_support('post-thumbnails');
+	/* default Post Thumbnail dimensions (cropped)
+	*  But effective only at browser side
+	*/
+	set_post_thumbnail_size( 150, 150, true );
+
+	// additional image sizes
+	// delete the next line if you do not need additional image sizes, effective only during media upload process
+	add_image_size( 'index-thumb', 150, 150, true ); 
+
 
 	// This theme uses wp_nav_menu() in one location.	
 	register_nav_menus( array(
@@ -63,7 +80,7 @@ function indian_setup() {
 	) );
 
 	// Setup the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'sorbet_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'indian_custom_background_args', array(
 		'default-color' => '#333333',
 		'default-image' => '',
 	) ) );
@@ -115,23 +132,18 @@ function indian_scripts() {
 	wp_enqueue_style( 'indian-roboto' );
 	wp_enqueue_style( 'indian-pt-serif' );
 
-	wp_enqueue_style( 'indian-genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.0.3' );
+	wp_enqueue_style( 'indian-genericons', get_template_directory_uri() . '/genericons/genericons/genericons.min.css', array(), '3.0.3' );
 
-	wp_enqueue_script( 'indian-init', get_template_directory_uri() . '/js/init.js', array( 'jquery' ), '20120206', true );
-
-	wp_enqueue_script( 'indian-menus', get_template_directory_uri() . '/js/menus.js', array( 'jquery' ), '20120206', true );
+	wp_enqueue_script( 'indian-menus', get_template_directory_uri() . '/js/menus.js', array( 'jquery' ), '1.0', true );
 
 	wp_enqueue_script( 'indian-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
-
-	/*wp_enqueue_script( 'indian-cookie-control', get_template_directory_uri() . '/js/cookieControl-6.2.min.js', array(), '20130115', true );*/
-
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
 	if ( is_singular() && wp_attachment_is_image() ) {
-		wp_enqueue_script( 'indian-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20130402' );
+		wp_enqueue_script( 'indian-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20130402', true );
 	}
 
 
@@ -194,7 +206,7 @@ add_action( 'init', 'indian_google_fonts' );
 /**
  * Enqueue Google Fonts for custom headers
  */
-function sorbet_admin_scripts( $hook_suffix ) {
+function indian_admin_scripts( $hook_suffix ) {
 
 	if ( 'appearance_page_custom-header' != $hook_suffix )
 		return;
@@ -203,7 +215,7 @@ function sorbet_admin_scripts( $hook_suffix ) {
 	wp_enqueue_style( 'indian-pt-serif' );
 
 }
-add_action( 'admin_enqueue_scripts', 'sorbet_admin_scripts' );
+add_action( 'admin_enqueue_scripts', 'indian_admin_scripts' );
 
 /**
  * Adds additional stylesheets to the TinyMCE editor if needed.
