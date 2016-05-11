@@ -1,4 +1,4 @@
 indian
 ======
 
-A mobile first clean simple minimalistic responsive one-column wordpress theme
+A mobile first clean simple minimalistic responsive one-column wordpress theme.
